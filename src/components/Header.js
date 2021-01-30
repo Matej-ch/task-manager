@@ -1,18 +1,14 @@
 import PropTypes from 'prop-types'
 import Button from "./Button";
 
-const Header = ({ title }) => {
-
-    const onClick = (e) => {
-
-    }
+const Header = ({ title,onAdd,showAdd }) => {
 
     return (
         <header className="flex justify-between items-center mb-1">
             <h1>
                 {title}
             </h1>
-            <Button text="Add" onClick={onClick} />
+            <Button text={showAdd ? 'Close' : 'Add'} onClick={onAdd} />
         </header>
     )
 }
