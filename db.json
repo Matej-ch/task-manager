@@ -10,18 +10,18 @@
       "id": 2,
       "text": "Buy bread",
       "day": "Yesterday",
-      "reminder": false
+      "reminder": true
     },
     {
       "text": "asdasdas",
       "day": "adsdasd",
-      "reminder": false,
+      "reminder": true,
       "id": 3
     },
     {
       "text": "asdasdasdasdasd",
       "day": "asdasdasdasdsadsad",
-      "reminder": true,
+      "reminder": false,
       "id": 4
     }
   ]
