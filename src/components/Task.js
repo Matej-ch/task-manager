@@ -4,7 +4,7 @@ const Task = ({task,onDelete,onToggle}) => {
     return (
 
             <div
-                className={`max-w-lg bg-white shadow-md rounded-lg overflow-hidden mx-auto mb-2 relative ${task.reminder ? 'border-green-300 border bg-green-100' : '' }`}
+                className={`max-w-lg bg-white shadow-md rounded-lg overflow-hidden mx-auto my-2 relative ${task.reminder ? 'border-green-300 border bg-green-100' : '' }`}
                  onDoubleClick={() => onToggle(task.id) }>
                 <div className="py-4 px-8 mt-3">
                     <div className="flex flex-col mb-8">

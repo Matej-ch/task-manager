@@ -20,26 +20,44 @@ const AddTask = ({ onAdd }) => {
     }
 
     return (
-        <form className='add-form' onSubmit={onSubmit}>
-            <div className='form-control'>
-                <label>Task</label>
-                <input type="text" placeholder='add task' value={text} onChange={(e) => setText(e.target.value)} />
-            </div>
-            <div className='form-control'>
-                <label>Day / Time</label>
-                <input type="text" placeholder='Add day and time' value={day} onChange={(e) => setDay(e.target.value)}/>
-            </div>
-            <div className='form-control'>
-                <label>Set reminder</label>
-                <input type="checkbox"
-                       checked={ reminder }
-                       value={ reminder } onChange={(e) => setReminder(e.currentTarget.checked)}/>
-            </div>
+        <div className="flex flex-col bg-gray-100 py-2">
+            <div className="grid place-items-center mx-2 my-20 sm:my-auto">
+                <div className=" p-12 px-6 py-10 sm:px-10 sm:py-6 bg-white rounded-lg shadow-md lg:shadow-lg">
+                    <h2 className="text-center font-semibold text-3xl lg:text-4xl text-gray-800"> Add new task </h2>
 
-            <input type="submit"
-                   value='Save task'
-                   className="flex-shrink-0 bg-blue-600 text-white text-base font-semibold py-2 px-4 rounded-sm shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-blue-200 active:bg-blue-700"/>
-        </form>
+                    <form className="mt-10" onSubmit={onSubmit}>
+                        <label htmlFor="task" className="block text-xs font-semibold text-gray-600 uppercase">Text</label>
+                        <input id="task" type="text" name="task" placeholder="Add task"
+                               value={text} onChange={(e) => setText(e.target.value)}
+                               className="block w-full py-3 px-1 mt-2
+                    text-gray-800 appearance-none
+                    border-b-2 border-gray-100
+                    focus:text-gray-500 focus:outline-none focus:border-gray-200"/>
+
+                        <label htmlFor="time" className="block mt-2 text-xs font-semibold text-gray-600 uppercase">Day/Time</label>
+                        <input id="time" type="text" name="time" placeholder="Day/Time"
+                               value={day} onChange={(e) => setDay(e.target.value)}
+                               className="block w-full py-3 px-1 mt-2 mb-4
+                    text-gray-800 appearance-none
+                    border-b-2 border-gray-100
+                    focus:text-gray-500 focus:outline-none focus:border-gray-200"
+                        />
+
+                        <label htmlFor="reminder" className="block mt-2 text-xs font-semibold text-gray-600 uppercase">Set reminder</label>
+                        <input id="reminder" type="checkbox"
+                               checked={ reminder }
+                               value={ reminder } onChange={(e) => setReminder(e.currentTarget.checked)}/>
+
+                        <input type="submit"
+                               value=" Save task"
+                               className="w-full py-3 mt-10 bg-gray-800 rounded-sm
+                    font-medium text-white uppercase
+                    focus:outline-none hover:bg-gray-700 hover:shadow-none cursor-pointer" />
+
+                    </form>
+                </div>
+            </div>
+        </div>
     )
 }
 
