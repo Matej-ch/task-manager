@@ -4,7 +4,7 @@
       "id": 1,
       "text": "First task",
       "day": "Today",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 2,
@@ -13,15 +13,9 @@
       "reminder": true
     },
     {
-      "text": "asdasdas",
-      "day": "adsdasd",
-      "reminder": true,
-      "id": 3
-    },
-    {
       "text": "asdasdasdasdasd",
       "day": "asdasdasdasdsadsad",
-      "reminder": false,
+      "reminder": true,
       "id": 4
     }
   ]
