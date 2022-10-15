@@ -7,7 +7,7 @@ const Header = ({ title,onAdd,showAdd }) => {
         <header className="flex justify-between items-center mb-2 w-full">
             <div className="mx-auto px-4 sm:px-6 w-full mb-2">
                 <div
-                    className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+                    className="flex justify-between items-center border-b-2 border-slate-100 py-6 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <a href="#" className="font-bold text-xl">
                             <span>{title}</span>
