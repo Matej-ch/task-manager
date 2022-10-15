@@ -1,4 +1,4 @@
-#### Task manager in react
+#### Todo in react
 
 Uses simple json server for saving tasks
 
